@@ -10,8 +10,8 @@ var getNews = require('./getNews');
 // })
 app.get('/sources', function (req, res) {
   let data = getNews.getSources()
-  console.log(data)
-  res.send(data)
+  res.send({data });
+  console.log(res );
 })
 
 const port = process.env.PORT || 3001;
